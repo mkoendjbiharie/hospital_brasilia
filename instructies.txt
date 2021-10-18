@@ -1,0 +1,18 @@
+#abre um terminal do linux
+#entre o diretorio de configuracao do webserver
+cd /etc/wt
+#editar o arquivo com editor de texto gedit
+sudo gedit wt_config.xml
+#alterar neste arquivo o parametro <timeout>600</timeout>
+<timeout>60000</timeout>
+#salvar o arquivo
+na barra do menu escolher Save
+#fechar gedit
+#voltar para o terminal
+#voltar para diretorio do sistema
+cd
+cd WT
+#compilar codigo fonte
+g++ 
+#rodar webserver
+./index.wt

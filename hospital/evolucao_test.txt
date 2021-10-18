@@ -1,0 +1,31 @@
+1035687|1225880|10.06.2016 00:00:00|10.06.2016 01:04:00|DATA 10/6/2016
+00:27HS PACIENTE ADMITIDO NESTA UNIDADE DE INTERNAÇÃO, PROCEDENTE DO PRONTO ATENDIMENTO, CONSCIENTE E ORIENTADO EM TEMPO ESPAÇO, CONTACTUANTE, VERBALIZANDO SEM ALTERAÇÕES, DEAMBULA, RESPIRANDO ESPONTÂNEO EM AA, EM DIETA ZERO, EM PRECAUÇÃO PADRÃO, ACOMPANHADO. NEGA HAS/DM E ALERGIA MEDICAMENTOSA (SIC). APRESENTA QUADRO DE CONVALESCENÇA APÓS CIRÚRGIA, DOR ABDOMINAL DIFUSA MAIS PREDOMINANTE EM HE.
+01:00HS REALIZADO AVP EM MSE, ADMINISTRADO MEDICAÇÕES CONFORME PRESCRITO ITENS 03, 04, 06 (GLICOSE 5%, TENOXICAM , NOVALGINA) VIA IV. SEGUE ENCAMINHADO AO AP 230.
+|996372|1225885|10.06.2016 00:00:00|10.06.2016 01:07:31|09/06/2016  19:00H- Recebo plantão, Paciente segue estável, em uso de monitorização  e cardiomonitorização contínua, respirando em ar ambiente, hipoativa, em  uso de antibióticos e medicaçoes CPM,com  SNE para administração  medicações , DIETA SUSPENSA CPM,  paciente apresenta hiperemia na região dorsal com riso de ulcera por pressao, apresenta  assadura em região perianal em estagio avançado ,em uso de fralda descartável E SVD POUCO PRODUTIVA DE COR AMARELO CONCENTRADO , segue com protocolo de queda, grades e cabeceira elevadas. Em precaução de contato. 
+
+20:00H- Verificado ssvv,realizado mudança de decubito,rodizio de sensor. Realizado troca de fralda com fezes de aspecto liquida.Gasto 01 fralda geriatrica P. Instalado Albumina humana  EM 3H EM BIC CPM.G ASTO 01  Equipo eurofix compact air. Bolado as medicações E NPT DESTES HORARIOS  devido esta em curso ALBUMINA .
+
+22:00H- Verificado ssvv,realizado mudança de decubito, rodizio de sensor.Administrado medicação de horario.Gasto 01 seringa de 10ml+ 01 agulha 40x12. Trocado equipos conforme protocolo de 24H para ATBS .Gastos 04 torneirinhas, 01 perfusor 120.
+
+23:00H -Administrado medicação de horario (MERONEM ).Gasto 01 equipo compact air 01 seringa de 10ml+ 01 agulha 40X12, 01 SF 0,9% 100ML.Desprezado diurese.gasto 01 saco coletor de 2000ml.
+
+24:00H-Verificado ssvv,realizado mudança de decubito,rodizio de sensor.Administrado medicação de horario (CIPRO ) Gasto 01 equipo eurofix compact air .
+
+02:00H- Verificado ssvv,realizado mudança de decubito,rodizio de sensor.Desprezado diurese.
+
+04:00H- Verificado ssvv,realizado mudança de decubito,rodizio de sensor.
+
+06:00H- Verificado ssvv,realizado mudança de decubito,rodizio de sensor.Administrado medicação de horario. ( ZOFRAN IV , VANCOMICINA SE ) .Gastos  03 seringas  de10ml +02 agulhas 40x12 .Desprezado diurese.gasto 01 saco coletor de 2000ml.
+|1032342|1225905|10.06.2016 00:00:00|10.06.2016 01:42:57|09/06/2016  19:00H- - Recebo plantão com paciente estavel, em BC, acompanhado da mãe, respirando   espontaneamente  POR MACRONEBULIZAÇÃO  a distância  CPM . Aplicado protocolo de queda, segue aos cuidados da enfermagem.
+
+20:00H - Realizado rodizio de sensor, estimulado mudança de decubito. Realizado troca de fralda, Gasto: 01 fralda pediatrica G.
+
+22:00H - Realizado rodizio de sensor, estimulado mudança de decubito. Realizado troca de fralda, Gasto: 01 fralda pediatrica G.
+
+24:00H- Realizado rodizio de sensor, estimulado mudança de decubito. Feito NBZ CPM.Gasto 01 seringa 5ml, 01 SF 0,9% 10ML.
+
+02:00H - Realizado rodizio de sensor, estimulado mudança de decubito. Realizado troca de fralda, Gasto: 01 fralda pediatrica G.
+
+04:00H - Realizado rodizio de sensor, estimulado mudança de decubito. 
+
+06:00H- Realizado rodizio de sensor, estimulado mudança de decubito.Feito NBZ CPM.Gasto 01 seringa 5ml, 01 SF 0,9% 10ML.

@@ -1,0 +1,102 @@
+evolucao_correspondente quando dt_evo[evolucao]=dt_pre[prescricao] e cd_atd[prescricao]=cd_atd[evolucao]
+horario_inicial é o primeiro horario que aparece em uma evolucao_correspondente
+Para cada combinacao de registros prescricao-evolucao
+{
+	Se evolucao_correspondente 
+	{
+		se horario_inicial<16:00
+		{
+			se horario de 00:00 até 15:59
+				processa como evolucoes do dia dt_pre
+			senão 
+				processa como evolucoes do dia dt_pre+1
+		}
+		senão 
+		{
+			se horario de 00:00 até 16:00
+				processa como evolucoes do dia dt_pre-1
+			senão 
+				processa como evolucoes do dia dt_pre
+		}
+	}
+}
+
+Obs.:
+um abre colchete inicia um novo bloco de instrucoes que termina na primeira fecha colchete perpendicularmente abaixo.
+
+
+struct prescricao_med{
+    string cd_pre;
+    string dt_pre;
+    string cd_atd;
+    string dt_prm;
+    string cd_pro;
+    string ds_pro;
+    string cd_fat;
+    string ds_uni;
+    string ds_pre;
+    string cd_fre;
+    string ds_fre;
+    string dh_reg;
+    int ds_evo;
+    int vezes;
+    int freq;
+    string dt_evo;
+    string hr_evo;
+};
+
+struct evolucao_enf{
+    string cd_evo;
+    string cd_atd;
+    string dt_evo;
+    string ds_evo;
+    string hr_evo;
+};        
+
+ordenar primeiro as prescricoes por cd_atd e dt_atd
+ordenar primeiro as evolucoes por cd_atd e dt_evo
+//Como a contagem de aplicacões é feita em cima das prescricoes, inicia-se 
+Para cada registro de prescricao
+{
+	contagem_das_aplicacoes_da_prescricao_atual=0;
+	para cada registro de evolucao
+	{
+		dia_ant_evo=dt_evo-1;
+		if (evolucao.cd_Atendimento = prescricao.cd_Atendimento)
+		{	
+			if (não existe prescrição para o paciente no dia anterior da evolução) prescricao.dt_pre!=dia_ant_evo)( 1ª. evolução. Paciente internado neste momento)
+			{
+				comparar todos os horários da evolução com prescrição do dia 
+			}
+			else
+			{
+				if (evolucao.hr_envo_enf >= 00:00 e <=7:00 ( paciente já estava internado no hospital))
+				{
+					comparar todos os horários da evolução com prescrição dt_pre - 1
+				}
+				if (evolucao.hr_envo_enf >= 7:01 e <=19:00)
+				{
+					if  (orário das evoluções descritas estiver entre 7:01 e 16:00)
+					{
+						Então comparar todos os horarios da evolução com prescrição dt_pre - 1
+					}
+					else 
+					{
+						comparar todos os horários da evolução com prescrição do dia
+					}
+				}
+				if (evolucao.hr_envo_enf >= 19:01 e 23:59)
+				{
+					if  (horário das evoluções descritas estiver entre 19:01 e 23:59)
+					{
+						comparar todos os horários da evolução com prescrição do dia
+					}
+					else 
+					{
+						comparar todos os horarios da evolução com prescrição dt_pre - 1
+					}
+				}
+			}
+		}
+	}
+}

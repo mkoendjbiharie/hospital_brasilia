@@ -1,0 +1,54 @@
+//1. bool reg_horario[j].nao_existe_prescricao_dia_anterior
+//2. bool reg_horario[j].evo_entre_0000_e_0700
+//3. bool reg_horario[j].evo_entre_0701_e_1900
+//4. bool reg_horario[j].evo_entre_0701_e_1600
+//5. bool reg_horario[j].evo_entre_1901_e_2359
+para cada registro de prescricao[i]
+{
+    para cada registro de evolucao[j]
+    {
+        if (evolucao[j].cd_Atendimento = prescricao[j].cd_Atendimento)
+        {    
+            if (reg_horario[j].nao_existe_prescricao_dia_anterior)
+            {
+                comparar todos os horários da evolução com prescrição do dia ( 1ª. evolução. Paciente internado neste momento)
+            }
+            else
+            {
+                if (reg_horario[j].evo_entre_0000_e_0700) //( paciente já estava internado no hospital)
+                {
+                    comparar todos os horários da evolução com prescrição dt_pre - 1
+                }
+                else
+				{
+					if (reg_horario[j].evo_entre_0701_e_1900)
+                   	{
+                      	if  (reg_horario[j].hr_evo>= 07:01" && reg_horario[j].hr_evo<="16:00")
+                       	{
+                        	Então comparar todos os horarios da evolução com prescrição dt_pre - 1
+                        }
+                      	else 
+                       	{
+                        	comparar todos os horários da evolução com prescrição do dia
+                       	}
+					}
+					else
+					{      
+               			if (reg_horario[j].evo_entre_1901_e_2359)
+                     	{
+                       		if  (reg_horario[j].hr_evo>= 19:01" && reg_horario[j].hr_evo<="23:59")
+                        	{
+                           		comparar todos os horários da evolução com prescrição do dia
+                        	}
+                       		else 
+                       		{
+                        		comparar todos os horarios da evolução com prescrição dt_pre - 1
+                       		}
+
+                    	}
+                 	}
+            	}
+        	}
+    	}
+	}
+}

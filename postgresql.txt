@@ -1,0 +1,22 @@
+#login as default linux postgres account
+sudo -i -u postgres
+#obtain prompt
+psql
+#exit postgres prompt
+\q
+#create a role
+createuser --interactive
+#create a database
+createdb hospital
+#change to the linux system account
+sudo -i -u hospital
+#users logged in
+\conninfo
+
+
+#The problem is still your pg_hba.conf file (/etc/postgresql/9.1/main/pg_hba.conf). This line:
+local   all             postgres                                peer
+#Should be
+local   all             postgres                                md5
+#After altering this file, don't forget to restart your PostgreSQL server. If you're on Linux, that would be sudo service postgresql restart.
+sudo service postgresql restart

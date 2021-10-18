@@ -1,0 +1,6 @@
+#database connectivity for C++
+sudo apt-get update
+sudo apt-get install libpqxx-dev
+
+#compilar
+g++ dbo.c -o dbo -lpqxx -lpq

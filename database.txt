@@ -1,0 +1,55 @@
+//Fazer rotina para popular tabelas a partir de arquivos
+//Fazer rotina para popular listas a partir de tabelas
+//Fazer rotina para salvar conteudo de lista em tabela
+
+CREATE TABLE medicamento(
+cd_pro char(5) PRIMARY KEY,
+ds_pro char(80) NOT NULL
+);
+
+CREATE TABLE sinonimo(
+cd_pro char(5),
+ds_sin char(50)
+);
+
+CREATE TABLE frequencia(
+cd_fre integer PRIMARY KEY,
+ds_fre char(10),
+nr_fre integer
+);
+
+CREATE TABLE setor(
+cd_set
+ds_set
+);
+
+CREATE TABLE prescricao(
+cd_pre char(7) PRIMARY KEY,
+dt_pre date NOT NULL,
+cd_atd char(7) NOT NULL, 
+dt_prm date,
+cd_pro char(5),
+ds_pro char(80),
+cd_fat char(7),
+ds_uni char(50),
+ds_pre char(80);
+cd_fre integer;
+ds_fre char(10),
+dh_reg char(5),
+ds_evo char(5),
+nr_vez integer,
+nr_fre integer
+);
+
+CREATE TABLE horario(
+cd_evo char(7),
+cd_atd ;
+dt_evo;
+hr_evo
+hr_anot
+ds_evo;
+nao_existe_prescricao_dia_anterior char(1)
+);
+
+
+

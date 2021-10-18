@@ -1,0 +1,119 @@
+g++ -o hello hello.c -lwthttp -lwt
+./hello --docroot . --http-address 0.0.0.0 --http-port 9090
+
+g++ index.c -o index -lwt -lwthttp
+g++ index.c -o index -I/usr/local/include -L/usr/local/lib -lwthttp -lwt -lboost_random -lboost_regex -lboost_signals -lboost_system -lboost_thread -lboost_filesystem -lboost_program_options -lboost_date_time -std=c++11
+g++ hello.C -o hello_test.wt -lwt -lwthttp -lboost_signals
+
+--
+g++ index.c -o index -I/usr/local/include -L/usr/local/lib -lwthttp -lwt -std=c++11
+./index --http-address=0.0.0.0 --http-port=8080 --deploy-path=/ --docroot=.
+
+INSTALAR LIBHARU E DEPOIS EXECUTAR
+sudo apt install cmake
+cmake /home/marlon/libharu-RELEASE_2_3_0 -DHARU_PREFIX=/home/marlon/libharu-RELEASE_2_3_0
+
+g++ index.c -o index -I/usr/local/include -L/usr/local/lib -lwthttp -lwt -lboost_system -std=c++11
+
+
+COMPILING DATABASE ENABLED
+g++ dbo.c -o dbo.wt -I/usr/local/include -lwtdbosqlite3 -lwtdbo
+./dbo.wt --http-address=0.0.0.0 --http-port=8080 --deploy-path=/ --docroot=.
+
+
+HTML FILE
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+  </head>
+
+  <body >
+     <div class="header">
+       <h1>Hello Plunker!</h1>
+    </div>
+    
+    <div class="sidebar">
+      <ul>
+            <li><a href="#">ANALYTICS</a></li>
+            <li><a href="#">STYLES</a></li>
+            <li><a href="#">VOTERS</a></li>
+            <li><a href="#">GET STARTED</a></li>
+            <li><a href="#">UPDATE</a></li>
+      </ul>
+    </div>
+    <div class="content">
+      <p>Content</p>
+    </div>
+    <div class="footer">
+      <p>Footer</p>
+    </div>
+  </body>
+
+</html>
+
+
+CSS FILE
+/* Styles go here */
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+body{
+  margin: 0 auto;
+}
+
+.header{
+  background-color: #262626; 
+  color: #fff; padding: 
+  0.1em 0.5em;
+}
+
+.content {
+  /*width: 80%;
+  height: 100%;
+  float: left;
+  background: url(http://s9.postimg.org/ft91z9c6z/bg_content.png) repeat left top;*/
+  display: inline-block; width: 75%; padding: 0.5em; height: 100%;
+}
+
+.sidebar{
+  width: 20%;
+  height: 100%;
+  float: left;
+  background-color: #00cccc; repeat left top;
+  
+}
+
+.footer{
+/*  width: 100%;
+  float: left;
+  background-color: #262626 repeat left top;*/
+  width: 100%;
+  float: left;
+  background-color: #262626; color: #fff; /*padding: 0.5em;*/
+}
+
+.sidebar ul{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    list-style: none;
+  
+}
+
+.sidebar li{
+    width: 100%;
+    padding-top: 50%;
+}
+
+.sidebar a{
+    display: block;
+    font-size: 0.5em;
+}
+
+
